@@ -9,7 +9,7 @@ var bio = {
 		"github": "ll6059",
 		"location": "Austin, TX"
 	},
-	"bioPic": "images/me.jpg",
+	"bioPic": "images/me.png",
 	"welcomeMsg": "Welcome to my online resume!",
 	"skills": [
 		"HTML",
@@ -155,10 +155,10 @@ work.display = function() {
  		var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 
  		$("#workExperience").append(HTMLworkStart);
- 		$(".work-entry:last").append(formattedEmployer + formattedWorkTitle);
- 		$(".work-entry:last").append(fromattedWorkLocation);
- 		$(".work-entry:last").append(formattedWorkDates);
- 		$(".work-entry:last").append(formattedWorkDescription);
+ 		$(".work-entry:first").append(formattedEmployer + formattedWorkTitle);
+ 		$(".work-entry:first").append(fromattedWorkLocation);
+ 		$(".work-entry:first").append(formattedWorkDates);
+ 		$(".work-entry:first").append(formattedWorkDescription);
  		}
 };
 
@@ -170,13 +170,13 @@ var projects = {
 		"title": "Build a Portfolio Site",
 		"dates": "October 2016",
 		"description": "This project is designed to use HTML and CSS to build and develop a responsive portfolio website. A design mockup was provided as a standard requirment for this project.",
-		"images": ["images/project-1.png"]
+		"images": ["images/project-1-1.png"]
 		},
 		{
 			"title": "Online Resume",
 			"dates": "November 2016",
 			"description": "This project is designed to use JavaScript to build a dynamic resume with ongoing updates and improvments.",
-			"images": ["images/project-2.png"]	
+			"images": ["images/project-1-2.png"]	
 		}
 	]
 };
@@ -211,7 +211,6 @@ education.display();
 work.display();
 projects.display();
 $("#main").append(internationalizeButton);
-
 $("#mapDiv").append(googleMap);
 
 

@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f9f9;
+  background-color: #f8c471;
 }
 
 body,
@@ -33,30 +33,24 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
-  color: #f5ae23;
-  line-height: 48px;
+  font-size: 25px;
+  color: #ccc;
   display: inline;
 }
 
 h2 {
-  /*font-weight: bold;*/
-  font-size: 20px;
   color: #7d6608;
-  line-height: 29px;
+  line-height: 30px;
 }
 
 h3 {
-  /*font-style: italic;*/
   color: #484848;
   line-height: 35px;
 }
 
 h4 {
-  /*font-weight: bold;*/
-  font-size: 14px;
   color: #4a4a4a;
-  line-height: 17px;
+  line-height: 16px;
 }
 
 h2,
@@ -67,8 +61,8 @@ h5 {
 }
 
 hr {
-  margin: -5px 0px 7px;
-  border: 1px solid #1199c3;
+  margin: -0.2vw 0vw 1vw;
+  border: 0.1vw solid #1199c3;
 }
 
 ul {
@@ -86,7 +80,7 @@ p {
   color: #515A5A;
   line-height: 20px;
   margin-bottom: 20px;
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 a {
@@ -99,15 +93,14 @@ a {
 }
 
 .welcome-message {
-/*  font-style: italic;*/
-  font-size: 125%;
+  font-size: 1.5vw;
   color: #1199c3;
   line-height: 25px;
   float: right;
+  margin-top: 2vh;
 }
 
 .date-text {
-  /*font-style: italic;*/
   font-size: 14px;
   color: #999;
   line-height: 15px;
@@ -115,16 +108,16 @@ a {
 }
 
 .location-text {
-  /*font-style: italic;*/
-  font-size: 14px;
+  font-size: 1vw;
   color: #999;
   line-height: 16px;
   float: right;
 }
 
-.orange {
+/*.orange {
   background-color: #f5ae23;
 }
+*/
 
 .orange-text {
   color: #f5ae23;
@@ -142,7 +135,7 @@ a {
 }
 
 .gray {
-  background-color: #fff9e9;
+  background-color: #f8f9f9;
   padding-bottom: 10px;
   padding-top: 10px;
   clear: both;
@@ -175,8 +168,8 @@ a {
 }
 
 .flex-item {
-  line-height: 23px;
-  font-size: 110%;
+  line-height: 3vh;
+  font-size: 100%;
  }
 
 .center-content {
@@ -186,10 +179,9 @@ a {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
   display: none;
   width: 15%;
-  margin-right: 5px;
+  margin-right: 0.5vw;
 }
 
 .date-text {
@@ -201,17 +193,31 @@ a {
 }
 
 #topContacts {
-  margin-bottom: 15px;
+  margin-top: -1vh;
 }
 
 #skills-h3 {
   color: #ccc;
   display: none;
-  font-size: 125%;
+  font-size: 1.5vw;
+  padding-top: 1.5vh;
+}
+
+#projects {
+  padding-top: 10px;
+}
+
+#mapDiv {
+  padding-top: 10px;
 }
 
 #lets-connect {
   text-align: center;
+}
+
+#footerContacts {
+  padding-bottom: 10px;
+
 }
 
 /* Media queries to handle various device widths */
@@ -235,9 +241,9 @@ a {
   .biopic {
     width: 150px;
   }
- /* .welcome-message {
+  .welcome-message {
     display: none;
-  }*/
+  }
 }
 
 #map {
