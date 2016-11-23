@@ -79,11 +79,11 @@ var education = {
 
 education.display = function() {
     for (var i = 0; i < education.schools.length; i++) {
-        var formattedSchoolName = HTMLschoolName.replace(data, education.schools[i].name);
+        var formattedSchoolName = HTMLschoolName.replace(data, education.schools[i].name).replace("#", education.schools[i].url);
         var formattedSchoolDegree = HTMLschoolDegree.replace(data, education.schools[i].degree);
         var formattedSchoolDates = HTMLschoolDates.replace(data, education.schools[i].dates);
         var formattedSchoolMajors = HTMLschoolMajor.replace(data, education.schools[i].majors);
-        var formattedSchoollURL = HTMLonlineURL.replace(data, education.schools[i].url);
+        var formattedSchoollURL = HTMLonlineURL.replace(data, education.schools[i].url).replace("#", education.schools[i].url);
         var formattedSchoolLocation = HTMLschoolLocation.replace(data, education.schools[i].location);
 
         $("#education").append(HTMLschoolStart);
@@ -94,10 +94,10 @@ education.display = function() {
     }
 
     for (var i = 0; i < education.onlineCourses.length; i++) {
-        var formattedOnlineTitle = HTMLonlineTitle.replace(data, education.onlineCourses[i].title);
+        var formattedOnlineTitle = HTMLonlineTitle.replace(data, education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
         var formattedOnlineSchool = HTMLonlineSchool.replace(data, education.onlineCourses[i].school);
         var formattedOnlineDates = HTMLonlineDates.replace(data, education.onlineCourses[i].dates);
-        var formattedOnlineURL = HTMLonlineURL.replace(data, education.onlineCourses[i].url);
+        var formattedOnlineURL = HTMLonlineURL.replace(data, education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
 
         $("#education").append(HTMLonlineClasses);
         $("#education").append(HTMLschoolStart);
